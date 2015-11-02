@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AFNetworking.h>
 
 /**
  *  Here is the docs for the Imgr gallery api
