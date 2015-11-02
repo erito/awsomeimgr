@@ -12,6 +12,8 @@
 
 @interface ViewController ()
 
+
+
 @end
 
 @implementation ViewController
@@ -28,12 +30,17 @@
 }
 
 -(void)loadData {
+    // Client ID: e510a2458b3841f
+    // Client secret: ecdd0555a5bf8ffcad9f11859870a4ba7a836fd3
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    NSString *urlString = @"%@hot/rising/1?show";
-    [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-        NSLog(responseObject);
+    [manager.requestSerializer setValue:@"e510a2458b3841f" forHTTPHeaderField:@"Authorization: Client-ID"];
+    NSString *urlString = [NSString stringWithFormat:@"%@3/gallery/hot/viral/1?showViral=true", BASE_API];
+    [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+        NSLog(@"%@", responseObject);
+        
+        
     } failure:^(AFHTTPRequestOperation * operation, NSError * error) {
-        NSLog(error);
+        NSLog(@"%@", error.userInfo);
     }];
     
 }

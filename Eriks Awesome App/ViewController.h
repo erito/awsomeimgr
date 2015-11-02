@@ -23,7 +23,7 @@
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-#define BASE_API = "https://api.imgur.com/3/"
+#define BASE_API @"https://api.imgur.com/3/"
 
 @property (nonatomic, retain) UITableView *imageTable;
 
