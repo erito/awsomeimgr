@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EriksAwesomeTableViewCell.h"
 
 @interface ViewController ()
 
@@ -26,16 +27,19 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 0.0;
+    return 200.0;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return 1;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    EriksAwesomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EriksAwesomeTableViewCell" forIndexPath:indexPath];
     
+//    [cell layoutWithImage:<#(UIImage *)#>];
     
+    return cell;
 }
 
 @end
