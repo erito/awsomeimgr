@@ -14,9 +14,12 @@
 		8E0DA9131BE7ED9E00893C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0DA9121BE7ED9E00893C7E /* Assets.xcassets */; };
 		8E0DA9161BE7ED9E00893C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0DA9141BE7ED9E00893C7E /* LaunchScreen.storyboard */; };
 		8E4D63561BE7FC1700AA1FB7 /* EriksAwesomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D63551BE7FC1700AA1FB7 /* EriksAwesomeTableViewCell.m */; };
+		A2037A82BABFA3CEF4C63B7F /* libPods-Eriks Awesome App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E454D4F261DCB649AE18BC8 /* libPods-Eriks Awesome App.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E454D4F261DCB649AE18BC8 /* libPods-Eriks Awesome App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Eriks Awesome App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A806EA6076A7C10B3DA7882 /* Pods-Eriks Awesome App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eriks Awesome App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eriks Awesome App/Pods-Eriks Awesome App.release.xcconfig"; sourceTree = "<group>"; };
 		8E0DA9031BE7ED9E00893C7E /* Eriks Awesome App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eriks Awesome App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0DA9071BE7ED9E00893C7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E0DA9091BE7ED9E00893C7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		8E0DA9171BE7ED9E00893C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E4D63541BE7FC1700AA1FB7 /* EriksAwesomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EriksAwesomeTableViewCell.h; sourceTree = "<group>"; };
 		8E4D63551BE7FC1700AA1FB7 /* EriksAwesomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EriksAwesomeTableViewCell.m; sourceTree = "<group>"; };
+		A481557804E2621808577ACE /* Pods-Eriks Awesome App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eriks Awesome App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eriks Awesome App/Pods-Eriks Awesome App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2037A82BABFA3CEF4C63B7F /* libPods-Eriks Awesome App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				8E0DA9051BE7ED9E00893C7E /* Eriks Awesome App */,
 				8E0DA9041BE7ED9E00893C7E /* Products */,
+				F4A4A88DA80BD861426D0262 /* Pods */,
+				D20D09DA52EA11A5834D6CDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +91,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D20D09DA52EA11A5834D6CDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E454D4F261DCB649AE18BC8 /* libPods-Eriks Awesome App.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4A4A88DA80BD861426D0262 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A481557804E2621808577ACE /* Pods-Eriks Awesome App.debug.xcconfig */,
+				4A806EA6076A7C10B3DA7882 /* Pods-Eriks Awesome App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E0DA91A1BE7ED9E00893C7E /* Build configuration list for PBXNativeTarget "Eriks Awesome App" */;
 			buildPhases = (
+				DA0453D5EF07D8507368A433 /* Check Pods Manifest.lock */,
 				8E0DA8FF1BE7ED9E00893C7E /* Sources */,
 				8E0DA9001BE7ED9E00893C7E /* Frameworks */,
 				8E0DA9011BE7ED9E00893C7E /* Resources */,
+				A448176A1CE1D00FC096667D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +174,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A448176A1CE1D00FC096667D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eriks Awesome App/Pods-Eriks Awesome App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA0453D5EF07D8507368A433 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E0DA8FF1BE7ED9E00893C7E /* Sources */ = {
@@ -267,6 +326,7 @@
 		};
 		8E0DA91B1BE7ED9E00893C7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A481557804E2621808577ACE /* Pods-Eriks Awesome App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Eriks Awesome App/Info.plist";
@@ -279,6 +339,7 @@
 		};
 		8E0DA91C1BE7ED9E00893C7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A806EA6076A7C10B3DA7882 /* Pods-Eriks Awesome App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Eriks Awesome App/Info.plist";
