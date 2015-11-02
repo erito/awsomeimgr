@@ -10,4 +10,8 @@
 
 @interface EriksAwesomeTableViewCell : UITableViewCell
 
+@property (atomic, retain) IBOutlet UIImageView *imageView;
+
+- (void)layoutWithImage:(UIImage *)image;
+
 @end
