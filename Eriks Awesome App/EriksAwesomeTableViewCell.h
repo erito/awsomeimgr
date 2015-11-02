@@ -13,5 +13,6 @@
 @property (atomic, retain) IBOutlet UIImageView *imageView;
 
 - (void)layoutWithImage:(UIImage *)image;
+- (void)layoutWithURL:(NSURL *)imageUrl;
 
 @end

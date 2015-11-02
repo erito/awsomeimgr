@@ -37,7 +37,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     EriksAwesomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EriksAwesomeTableViewCell" forIndexPath:indexPath];
     
-//    [cell layoutWithImage:<#(UIImage *)#>];
+//    [cell layoutWithURL:<#(NSURL *)#>];
     
     return cell;
 }
