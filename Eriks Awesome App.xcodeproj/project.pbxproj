@@ -120,6 +120,7 @@
 				8E0DA9001BE7ED9E00893C7E /* Frameworks */,
 				8E0DA9011BE7ED9E00893C7E /* Resources */,
 				A448176A1CE1D00FC096667D /* Copy Pods Resources */,
+				CAFF49F0B5F5326665C6B581 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +190,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eriks Awesome App/Pods-Eriks Awesome App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAFF49F0B5F5326665C6B581 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eriks Awesome App/Pods-Eriks Awesome App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DA0453D5EF07D8507368A433 /* Check Pods Manifest.lock */ = {
@@ -330,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Eriks Awesome App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ecg.close5.Eriks-Awesome-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -342,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Eriks Awesome App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ecg.close5.Eriks-Awesome-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
