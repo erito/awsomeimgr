@@ -13,10 +13,13 @@
 
 - (void)layoutWithImage:(UIImage *)image {
     [self.imageView setImage:image];
+    [self layoutSubviews];
 }
 
 - (void)layoutWithURL:(NSURL *)imageUrl {
-    [self.imageView sd_setImageWithURL:imageUrl placeholderImage:nil options:SDWebImageRefreshCached completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) { }];
+    [self.imageView sd_setImageWithURL:imageUrl placeholderImage:nil options:SDWebImageRefreshCached completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        [self layoutSubviews];
+    }];
 }
 
 @end

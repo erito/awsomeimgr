@@ -25,7 +25,8 @@
 
 #define BASE_API @"https://api.imgur.com/3/"
 
-@property (nonatomic, retain) UITableView *imageTable;
+@property (nonatomic, retain) IBOutlet UITableView *imageTable;
+@property (nonatomic, retain) NSArray *response;
 
 @end
 
